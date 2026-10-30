@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>iPadelApp - volver</title>
+</head>
+<body style="font-family:system-ui,sans-serif;max-width:420px;margin:15vh auto;padding:0 16px;text-align:center">
+  <h2>Volviendo a iPadelApp...</h2>
+  <p><a id="go" href="#">Si no te lleva solo, tocá acá.</a></p>
+  <script>
+    // SOLO PARA DESARROLLO. Mercado Pago devuelve al comprador a una URL https; esta página lo manda de vuelta
+    // a la app que corre en su propia PC. No se reenvía ningún parámetro: la app consulta el pago por su cuenta.
+    var LOCAL_APP = 'http://localhost:5173/jugador-v2/home';
+    document.getElementById('go').href = LOCAL_APP;
+    location.replace(LOCAL_APP);
+  </script>
+</body>
+</html>
