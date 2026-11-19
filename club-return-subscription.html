@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>iPadelApp - volver a Suscripción</title>
+</head>
+<body style="font-family:system-ui,sans-serif;max-width:420px;margin:15vh auto;padding:0 16px;text-align:center">
+  <h2>Volviendo a iPadelApp...</h2>
+  <p><a id="go" href="#">Si no te lleva solo, tocá acá.</a></p>
+  <script>
+    // SOLO PARA DESARROLLO (igual que club-return.html): vuelve a la pantalla de Suscripción del panel que corre en la PC.
+    // No se reenvía ningún parámetro: el panel consulta el pago por su cuenta.
+    var LOCAL_APP = 'http://localhost:5173/complejo/suscripcion';
+    document.getElementById('go').href = LOCAL_APP;
+    location.replace(LOCAL_APP);
+  </script>
+</body>
+</html>
